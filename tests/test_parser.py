@@ -22,7 +22,7 @@ def test_get_todolog_values_by_key(toml_parser):
 
 def test_log(caplog):
 
-    @todo(key="key1")
+    @todo("key1")
     def todo_function():
         pass
 

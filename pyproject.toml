@@ -6,7 +6,11 @@ build-backend = "flit_core.buildapi"
 name = "todolog"
 authors = [{name = "qu3vipon", email = "qu3vipon@gmail.com"}]
 license = {file = "LICENSE"}
-classifiers = ["License :: OSI Approved :: MIT License"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Typing :: Typed",
+    "Programming Language :: Python :: 3.10",
+]
 dynamic = ["version", "description"]
 keywords = ["todo", "log", "todolog"]
 dependencies = [
