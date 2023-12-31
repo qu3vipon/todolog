@@ -7,7 +7,7 @@ Annotated ToDos are not well managed.
 ## Features
 - If there is any ToDo that is past due, logs a message.
 - Different log levels can be applied for each ToDo.
-- Todo can be actively managed as a separate TOML file, not as an annotation.
+- ToDo can be actively managed as a separate TOML file, not as an annotation.
 - Logging can be turned off.
 - Each module can have a separate TOML file. 
 - Configurations in TOML file is cached on memory without continuing to read.
@@ -40,7 +40,7 @@ Annotated ToDos are not well managed.
    """
    ```
 
-4. Add a decoder to the function that should be managed.
+4. Add a decorator to the function that should be managed.
    ```python
    @todo(key="key1")
    def deprecated_function():
