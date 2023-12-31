@@ -16,7 +16,7 @@ def todo(key: str, ignore: bool = False):
     def decorator(func):
         def wrapper(*args, **kwargs):
             if ignore:
-                return
+                return func(*args, **kwargs)
 
             parser: TOMLParser = TOMLParser(caller_dir=caller_dir)
             values: dict = parser.get_todolog_values_by_key(key=key)
