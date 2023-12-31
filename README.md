@@ -7,8 +7,10 @@ Annotated ToDos are not well managed.
 ## Features
 - If there is any ToDo that is past due, logs a message.
 - Different log levels can be applied for each ToDo.
-- Todo can be actively managed as a separate toml file, not as an annotation.
+- Todo can be actively managed as a separate TOML file, not as an annotation.
 - Logging can be turned off.
+- Each module can have a separate TOML file. 
+- Configurations in TOML file is cached on memory without continuing to read.
 
 ## Usage
 1. Install todolog
@@ -16,7 +18,7 @@ Annotated ToDos are not well managed.
    pip install todolog
    ```
 
-2. Specify the name of the configuration file to be used for todo logging in `pyproject.toml`. 
+2. Specify the name of the configuration file to be used for todo logging in `pyproject.toml`(`pyproject.toml` must be under the source root).  
     ```toml
     # pyproject.toml
     [tool.todolog]
