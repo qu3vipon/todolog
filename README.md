@@ -1,13 +1,10 @@
 # todolog
-Actively Manage ToDos!
-
-## Motivations
-Annotated ToDos are not well managed.
+Comment is not enough. Actively Manage ToDos!
 
 ## Features
 - If there is any ToDo that is past due, logs a message.
 - Different log levels can be applied for each ToDo.
-- ToDo can be actively managed as a separate TOML file, not as an annotation.
+- ToDo can be actively managed as a separate TOML file, not as a comment.
 - Logging can be turned off.
 - Each module can have a separate TOML file. 
 - Configurations in TOML file is cached on memory without continuing to read.
@@ -31,14 +28,14 @@ Annotated ToDos are not well managed.
    # todolog.toml
    [key1]
    responsible = "qu3vipon@gmail.com"
-   message = "This is a log message."
+   message = "[ToDo] This is a log message."
    due = 2023-12-31
    log_level = "WARNING"
    description = """
-   This is a description about a todo.
+   This is a description about a ToDo.
    It can be written very long, but it is ignored at run time.
    """
-   ```
+   ```g
 
 4. Add a decorator to the function that should be managed.
    ```python
