@@ -15,13 +15,14 @@ Comment is not enough. Actively Manage ToDos!
    pip install todolog
    ```
 
-2. Specify the name of the configuration file to be used for todo logging in `pyproject.toml`(`pyproject.toml` must be under the source root).  
-    ```toml
-    # pyproject.toml
-    [tool.todolog]
-    filename = "todolog.toml"
-    default_log_message = "This is a default log message."
-    ```
+2. Specify the name of the configuration file to be used for todo logging in `pyproject.toml`.
+   - `pyproject.toml` must be under the source root  
+   ```toml
+   # pyproject.toml
+   [tool.todolog]
+   filename = "todolog.toml"
+   default_log_message = "This is a default log message."
+   ```
 
 3. Write a configuration for todos in TOML format.
    ```toml
@@ -35,7 +36,7 @@ Comment is not enough. Actively Manage ToDos!
    This is a description about a ToDo.
    It can be written very long, but it is ignored at run time.
    """
-   ```g
+   ```
 
 4. Add a decorator to the function that should be managed.
    ```python
