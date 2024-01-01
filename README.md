@@ -16,7 +16,7 @@ Comment is not enough. Actively Manage ToDos!
    ```
 
 2. Specify the name of the configuration file to be used for todo logging in `pyproject.toml`.
-   - `pyproject.toml` must be under the source root  
+   - `pyproject.toml` must be under the source root.
    ```toml
    # pyproject.toml
    [tool.todolog]
@@ -24,7 +24,7 @@ Comment is not enough. Actively Manage ToDos!
    default_log_message = "This is a default log message."
    ```
 
-3. Write a configuration for todos in TOML format.
+3. Write a configuration for ToDos in TOML format.
    ```toml
    # todolog.toml
    [key1]
